@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    
+<button id="complimentButton">Get a compliment</button>
+<button id="fortuneButton">Get a fortune</button>
+
+<label for="Good">Guess what?</label>
+
+<select name="Good">
+  <option value="You are awesome">You are awesome</option>
+  <option value="You are beautiful">You are beautiful</option>
+  <option value="You are KENough">You are KENough</option>
+</select>
+
+</header>
+<section id="toDoSection">
+  <div id="listTitle">
+    <h1>Things to do:</h1>
+    <button id="toDoListButton">Get to do list</button>
+  </div>
+
+
+  <div id="listDisplay">
+
+  </div>
+
+  <form onsubmit="false">
+    <p>Add to the to do list:</p>
+    <input placeholder="enter to do item" id="postItem" type="text">
+    <button id="toDoBtn">Add to list</button>
+  </form>
+  <form onsubmit="false">
+    <p>Update item on the to do list:</p>
+    <input placeholder="enter item number" id="updateNum" type="text">
+    <input placeholder="new item" id="updateContent" type="text">
+    <button id="updateListButton">Update</button>
+  </form>
+  <form onsubmit="false">
+    <p>Delete item on the to do list:</p>
+    <input placeholder="enter number of item" type="text">
+    <button id="delteToDoListButton">Delete</button>
+  </form>
+</section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
